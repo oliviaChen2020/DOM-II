@@ -106,5 +106,11 @@ allLinks.forEach(function(link){
     })
 })
 
- 
 
+// stretch Greensock animation on signup buttons
+
+bottomBtn.forEach(function(btn){
+    btn.addEventListener("mouseenter", function (){
+        TweenMax.to(btn, 1, { scaleY:0.6, height:"50vh" })
+    })
+})
